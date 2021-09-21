@@ -1,0 +1,255 @@
+html{
+    font-size: 20px;
+    width: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 44%, rgba(0,0,0,1) 44%);    margin: 0;
+}
+
+/* ============header-nav-bar=================== */
+nav{
+    position: fixed;
+    z-index: 999;
+    font-size: 1.5em;
+     background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+header{
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content:space-between;
+}
+.head-name{
+    font-size: 1em;
+    font-weight: bolder;
+}
+.left-head{
+    margin: 0  1em 0;
+    width: 30%;
+    float: left;
+    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+}
+ .right-div{
+     width: 100%;
+     float: left;
+ }
+ul{
+    display: inline ;
+    display: flex;
+    justify-content: space-between;   
+}
+li{
+    padding-left: 2rem;
+     display: inline ;
+    font-size: .8em;
+    display: flex;
+    justify-content: space-between;
+}
+.container{
+    height: 45em;
+    width: 100%;
+    margin: 0 auto;
+}
+.main-body
+{
+    width: 100%;
+}
+.gif-background{
+    width: 100%;
+    z-index: 0;
+  height: 40%;
+   
+}
+.watch-main{
+    max-height: 60;
+    min-height: 100%;
+    position:absolute;
+    z-index: 1;
+    width: 45%;
+    height: 115%;
+    margin: 0 auto;
+    margin:  5%   0em  0em 45%;
+    transition:transform 350ms;
+}
+.watch-main:hover{
+  transform:scale(1.1);
+}
+.left-content{
+    position: absolute;
+    color: azure;
+    margin-left: 10%;
+    margin-top: 25%;
+}
+
+.left-cont{
+    margin-top: -10% ;
+}
+.cnt-1{
+    font-weight: bolder;
+    font-size:6em;
+
+}
+.cnt-botm{
+    padding-bottom: 1%;
+    color: red;
+    margin-top: -15%;
+    letter-spacing: .5em;
+    border-bottom: solid 2px yellow;
+    width: 60%;
+
+}
+/* =============body-container=============== */
+.body-2{
+   
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10%;
+     background-color: black;
+    width: 80%;
+    margin: 0 auto;
+}
+.body-2-container{
+    height: 5em;
+    padding: 1em;
+    margin-top: 0%;
+    background-color:
+    #030303;
+}
+.mid-btn{
+    display: flex;
+    justify-content:space-around;
+    text-align: center;
+    background-color: black;
+    color: white;
+    border: 1px solid;
+    font-size: 1em;
+     padding: .6em 1em 1em 1em;
+     font-weight: bolder;
+} 
+.btn-2:hover{
+    background-color: white;
+    color:black;
+    cursor: pointer;
+    transition: 750ms;
+}
+.fst-btn{
+    font-size:1em;
+    background-color: white;
+   color: black;
+   font-weight: bolder;
+   border :1px solid
+}
+.fst-btn:hover{
+    background-color:black;
+    color: white;
+    transition: 750ms;
+}
+.explor-section{
+    height: 33em;
+    color: white;
+    text-align: center;
+    background-color: #080808;
+}
+.watch-show-row{
+    transition:transform 500ms;
+    width: 20%;
+}
+.watch-show{
+    display: flex;
+    justify-content: space-evenly; 
+}
+.watch-show-row:hover{
+    transform:scale(1.1);
+}
+.watch-name-ul{
+    margin-left: 7%;
+    width: 80%;
+    font-weight: bolder;
+    color: white;
+}
+/* ============body container -2============== */
+.profiles{ 
+    width: 95%;
+    margin: 2em auto;
+    height: 43em;
+}
+.ambassador{
+    
+    width: 100%;
+    height: 33em;
+}
+.amba-comment{
+    box-shadow: 6px -13px 113px -7px rgba(0,0,0,0.48);
+    -webkit-box-shadow: 6px -13px 113px -7px rgba(0,0,0,0.48);
+    -moz-box-shadow: 6px -13px 113px -7px rgba(0,0,0,0.48);
+    padding:1em;
+    width: 70%;
+    background-color: azure;
+    margin:0% auto;
+    z-index: 3;
+    text-align: center;
+    position:relative ;
+    margin-top: -8%;
+}
+
+.container-3{
+    height: 50em;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 44%, rgba(0,0,0,1) 44%);
+}
+.container-4{
+    margin-top: -3em;
+    background-color: white;
+}
+.hr-1{
+    border-bottom:2px solid yellow ;
+    border-width:medium;
+    padding:.2em;
+}
+
+/* ==================================================== */
+.container-6{
+    height: 53em;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: 1em auto;
+    background-color: white;
+}
+.left-last-row{
+    height: .1em;
+    padding: .5em;
+    width: 50%;
+    padding-bottom: 5em;
+}
+.container-footer{
+    
+    background-color: black;
+    color: white;
+   padding:1em;
+    text-align: left; 
+}
+.hub-logo{
+    margin-left: 47%;
+    width: 10%;
+}
+
+.icons{
+    width: 25%;
+    margin: 0 auto;
+    font-size: 1.5em;
+    margin-top: -.3em;
+}
+.ul-line{
+    
+    border-bottom: solid 2px white;
+}
