@@ -1,0 +1,475 @@
+body{
+    background-color: black;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+html{
+    color: white;
+    font-size: 15px;
+}
+h1{
+     padding-top: .2em;
+    font-size: 4em;
+}
+li{
+    cursor: pointer;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+header{
+    width: 100%;
+}
+section{
+  width: 100%;
+}
+nav{
+    
+    width: 100%;
+    z-index:9999;
+    position: fixed;
+    height: 3em;
+    justify-content: space-between;
+    display: flex;
+    color: white;
+    background-color: black;
+    padding: 1%;
+}
+.left-head{
+    height: 3em;
+    min-width: 10%;
+    max-width: 10%;
+}
+.left-head img{
+   width:70%;
+}
+.right-head{
+    padding-right:2%;
+    justify-content: space-between;
+    max-width: 90%;
+   min-width: 70%;
+    display: flex;
+
+}
+.right-head-1 ul,li{
+    font-size: 1.1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.right-head-1 li {
+    padding-left: 1em;
+    padding-right: .3em;
+    border-left-style: 3em;
+    /* border-right: 5px solid red; */
+} 
+.right-head-1 li:last-child {
+    border: none;
+
+}
+.right-head-1 li:first-child{
+    position:reltive;
+    padding-bottom: 2em;
+    
+
+
+}
+
+.right-head-2 {
+    display: flex;
+    justify-content: space-between;
+}
+.search-bar {
+    display: flex;
+  
+    background-color: white;
+    border-radius: 30px;
+}
+.search-bar input ,i{
+    color: black;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    padding:6%;
+    font-size: 1.2em;
+}
+.right-icons i{
+    padding: .9em;
+    color: white;
+}
+.right-icons{
+    display: flex;
+    
+}
+ #drop-down-head-shop{
+     width: 100%;
+    position: fixed;
+    padding-top: 4%;
+    background: rgb(62,62,62);
+    background: radial-gradient(circle, rgba(62,62,62,1) 26%, rgba(38,38,38,1) 58%);
+    transition: 500ms;
+    z-index: 99;
+    opacity: 0;
+    align-items: center;
+}
+
+#drop-down-head-shop img{
+    width: 23%;
+    padding:0%;
+
+
+  
+}
+span{
+    color: red;
+    font-weight: bolder;
+    line-height: 1em;
+}
+.slider{
+   overflow: hidden;
+
+  
+}
+.slider figure{
+    width: 500%;
+    position: relative;
+    margin: 0;
+    left:0;
+    animation:  20s slider infinite;
+    
+}
+.slider figure img{
+    float: left;
+    width: 20%;
+
+}
+
+@keyframes slider{
+    0%{
+        left: 0;
+    }
+    20%{
+        left: 0;
+    }
+    25%{
+        left:-100% ;
+    }
+    45%{
+        left: -100%;
+    }
+    50%{
+        left: -200%;
+    }
+    70%{
+        left: -200%;
+    }
+    75%{
+        left: -300%;
+    }
+    95%{
+        left: -300%;
+    }
+    100%{
+        left: -400%;
+    }
+
+}
+.rotatin-text{
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    font-size: 3em;
+    color: white;
+     
+
+}
+.out-line{
+    margin-right: .6em;
+    margin-left: .6em;
+    -webkit-text-stroke-width: 1.7px;
+    -webkit-text-stroke-color: #ffffff;
+    -webkit-text-fill-color: #000000;
+}
+.rotatin-text > *{
+   animation: scrol-text 6s linear  infinite ;
+   
+
+}
+ @keyframes scrol-text{
+      
+     100%{
+         transform: translateX(-100%);
+     }
+ }
+ /* ============================ambasidor review=============================== */
+ .review-ambasidor{
+     padding: 3em;
+     left: 8%;
+    transition: 3000ms;
+    position: absolute;
+    width: 80%;
+    display: flex;
+  }
+  .ambasidor-image-left img{
+    clip-path: circle(42.9% at 44% 52%);
+    width: 60%;
+}
+  .ambasidor-image-left{
+      width: 30%;
+     
+  }
+  .review-ambasidor{
+      background-color: rgb(179, 179, 179);
+  }
+.ambasidor-review-right{
+
+    color: black;
+    vertical-align: middle;
+    width: 70%;
+}
+.ambasidor-review-right h2{
+    font-size: 2em;
+}
+.ambasidor-review-right P{
+    font-size: 1.3em;
+    text-align: center;
+}
+button{
+    padding:.3em;
+    font-weight: bolder;
+    font-size: 1.5em;
+    outline: none;
+    color:white;
+    border-radius: 30px;
+    background-color: red;
+    border :solid 2px rgb(0, 0, 0)
+}
+/* ==================== */
+.ambasidor-review-2{
+    height: 35em;
+    width: 100%;
+    display: flex;
+
+}
+.ambasidor-review-2-left{
+    width: 60%;
+    text-align: start;
+    padding-left: 5%;
+}
+.ambasidor-review-2-right{
+    display: flex;
+    align-items: center;
+    width: 40%;
+}
+.ambasidor-review-2-right img{
+    position: absolute;
+    width: 30%;
+    min-width: 400px;
+    transition: 3000ms;
+}
+/* ============shoping-1=================== */
+.shoping-item{
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    width:80% ;
+    margin: 0 auto;
+
+}
+.shoping-item img{
+    width:33%;
+    padding: .5em;
+}
+.button-2 ,.button-1{
+    font-size: 7em;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-weight: bolder;
+    color:red;
+}
+.button-2 p:focus{
+   animation: 10s slider;  
+   color: white;
+ 
+
+}
+.button-1 {
+    padding-top: 1em;
+ 
+}
+.button-1:hover{
+    color: white;
+}
+
+@keyframes slider-1{
+   100%{
+       left: 100%;
+   }
+}
+.card-1{
+    gap: 5em;
+    border-radius: 30px;
+        position: relative;
+    background-color: rgb(255, 255, 255);
+
+}
+.card-1 img{
+
+    padding: 2em;
+    background-color: rgb(138, 138, 138);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.card{
+    padding-top: 5%;
+    flex-wrap: wrap;
+    color: black;
+    padding: 1em;
+    display: flex;
+    justify-content: space-evenly;
+}
+.card-1 ,p,h4,h3,btn{
+    margin-top: -2%;
+}
+.card-1 ul{
+    list-style-type: square;
+    
+}
+/* ==================image gallery-=============== */
+
+.img-gal{
+    display: flex;
+    width: 90%;
+
+}
+.right-img{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+}
+.right-img img{
+    width: 100%;
+}
+.left-img-bottom{
+    display: flex;
+}
+.left-img{
+    width:100% ;
+}
+.left-img img{
+    width: 100%;
+}
+.left-img-bottom img{
+    width: 50%;
+}
+
+
+#hide-stars-overlay{
+    opacity: 1;
+    position: absolute;
+    font-size: 15em;
+    color: white;
+    text-align: center;
+}
+/* ========================instagranm page===================== */
+
+.insta-review{
+    width: 50%;
+    padding: 3%;
+    display: flex;
+}
+.instacard{
+    background-color: rgb(42, 41, 41);
+    width: 60%;
+    color: white;
+    margin-right: 3%;
+}
+.insta-head{
+    display: flex;
+    padding: 1%;
+
+}
+.insta-head img{
+    clip-path: circle(42.9% at 44% 52%);
+    width: 10%;
+    margin-right: 4%;
+    margin-left: 4%;
+}
+
+.insta-body img{
+    width: 100%;
+}
+.insta-footer{
+    left: 10%;
+    color: white;
+    font-size: 2em;
+    margin-top: -1em;
+
+}
+.footer-insta{
+
+    font-size: 1.2em;
+    color: white;
+}
+.showmore{
+        background-color: black;
+        font-size: 1.2em;
+        border: solid 1px red;
+        border-radius: 0px;
+        cursor: pointer;
+}
+
+.footer-2 >*{
+    text-align: center;
+    display: flex;
+    padding: 2%;
+    width: 35%;
+
+}
+.footer-2 h4{
+    margin-top: 4%;
+}
+.footer-2 img{
+    margin-right: 2%;
+    width: 15%;
+}
+.footer-2{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* =============footer================= */
+
+.last-footer{
+    display: flex;
+    width: 100%;                
+    margin-top: 2%;
+    justify-content: space-around;
+}       
+.last-footer:first-child{
+    width: 100%;
+} 
+.last-footer button{
+    background-color: transparent;
+    border-radius: 0;
+    border:1px solid red;
+    font-size: 1.1em;
+    margin-left: 2%;
+}
+.last-footer input{
+    background-color: black;
+    color: white;
+    outline: none;
+    border:1px solid grey;
+    height: 15%;
+
+}
+.last-footer p{
+    margin-top: 1%;
+}
