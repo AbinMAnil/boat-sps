@@ -372,7 +372,7 @@ button{
 #hide-stars-overlay{
     opacity: 1;
     position: absolute;
-    font-size: 9em;
+    font-size: 7em;
     color: white;
     text-align: center;
 }
